@@ -1,53 +1,76 @@
 # Healthcare-Analytics
 A Power BI project analyzing healthcare facility distribution, funding disparities, and emergency response times across African regions. Provides data-driven insights for policymakers and stakeholders.
 
-## Dashboard Preview  
-![Power BI Dashboard](dashboardpowerbi.png)  
+## Tools Used
+- **Power BI** for data visualization
+- **Power Query** for cleaning and transformation
+- **DAX** for creating KPIs and calculated columns
 
-## Data Source and Preparation  
-- **Dataset Source:** AXIA AFRICA (provided for the assessment).  
-- **Data Cleaning & Transformation:**  
-  - Processed data in **Power Query** (removed duplicates, ensured consistency).  
-  - Added three key columns:  
-    - **Urban/Rural Classification** – Differentiates healthcare regions.  
-    - **Funding Categories** – Groups funding into high, medium, and low.  
-    - **Funding per Visit** – Measures facility efficiency.  
+---
 
-## Dashboard Design and Visualizations  
-### Key Metrics:  
-- **Total Funding Allocated:** $213M  
-- **Average Response Time:** 32.41 minutes  
-- **Average Visits per Facility:** 10.59K  
-- **Facility Count:** Hospitals, Health Centers, Clinics  
+## Data Source
+Dataset provided by **Axia Africa** for my capstone project. It includes:
+- Healthcare facilities
+- Funding data
+- Emergency response metrics
+- Patient visit records
 
-### Visualizations:  
-- **Facility Distribution:** Urban vs. Rural (bar chart).  
-- **Funding Breakdown:**  
-  - **77.41% funding** is allocated to urban areas.  
-  - **22.59% funding** goes to rural areas.  
-- **Funding Per Visit:** Horizontal bar chart.  
-- **Emergency Response vs. Funding:** Scatter plot (shows no significant correlation).  
-- **Response Time by Distance:** Line graph.  
-- **Country-based Slicers:** For deeper analysis.  
+---
 
-## Key Findings & Insights  
-1. **Urban areas have more healthcare facilities** (1,530 vs. 470 in rural areas).  
-2. **Funding allocation is highly uneven** – Urban areas receive **77.41%**, rural areas get only **22.59%**.  
-3. **Funding does not strongly impact emergency response time** (as seen in the scatter plot).  
-4. **Rural areas have slightly lower funding per visit**, making accessibility a challenge.  
+## Process Overview
 
-## Actionable Insights  
-  **Bridging the Healthcare Gap:**  
-- Increase **funding allocation** for rural areas.  
-- Improve **rural healthcare infrastructure** and provide incentives for healthcare workers.  
-- **Leverage technology & telemedicine** for remote healthcare solutions.  
-- Optimize **data-driven funding allocation models**.  
+### 1. **Data Cleaning & Preparation**
+- I Removed nulls and duplicates
+- I Renamed and standardized columns
+- I Created custom columns:
+  - Urban/Rural classification
+  - Funding categories (High, Medium, Low)
+  - Funding per Visit
 
-## Recommendations  
-✅ **Increase Rural Healthcare Funding** for balanced resource distribution.  
-✅ **Improve Emergency Response** in underserved areas.  
-✅ **Expand Rural Healthcare Facilities** to ensure accessibility.  
-✅ **Use AI & Data Analytics** for predictive healthcare resource planning.  
+### 2. **Data Modeling**
+- I Linked multiple tables via relationships:
+  - Location ↔ Funding
+  - Facility Type ↔ Visits
+  - Country ↔ Response Time
+- I Ensured data integrity for accurate analysis
 
-## Conclusion  
-This project presents a **comprehensive Power BI analysis** on healthcare funding and accessibility in Africa. By identifying disparities and inefficiencies, it provides **data-backed recommendations for improving healthcare equity and decision-making**.  
+### 3. **KPI Creation**
+- **Total Healthcare Funding:** $213M
+- **Average Emergency Response Time:** 32.41 minutes
+- **Average Facility Visits:** 10.59K
+- **Facility Count:** Urban – 1,530 | Rural – 470
+- **Funding per Visit:** Custom DAX calculation
+
+### 4. **Dashboard Design**
+- KPI cards
+- Clustered bar charts (Facility distribution)
+- Pie charts (Funding allocation)
+- Horizontal bar chart (Funding per visit)
+- Line & scatter plots (Funding vs. Response)
+- Country slicers for filtering
+
+---
+
+## Key Insights
+
+- **Urban areas receive 3x more funding** than rural areas
+- **No direct relationship** between high funding and faster response times
+- **Rural regions have fewer facilities** and lower average visits
+- **Funding per visit varies** by location and facility type
+
+---
+
+## Recommendations
+
+- Allocate more funding to rural regions
+- Invest in healthcare infrastructure outside urban zones
+- Use telemedicine and AI to improve rural healthcare delivery
+- Monitor efficiency using **Funding per Visit** KPI
+
+---
+
+## Dashboard Preview
+
+![Power BI Dashboard](dashboardpowerbi.png)
+
+
