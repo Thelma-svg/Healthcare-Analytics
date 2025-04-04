@@ -2,7 +2,7 @@
 A Power BI project analyzing healthcare facility distribution, funding disparities, and emergency response times across African regions. Provides data-driven insights for policymakers and stakeholders.
 
 ## Dashboard Preview  
-![Power BI Dashboard](dashboard.png)  
+![Power BI Dashboard](dashboardpowerbi.png)  
 
 ## Data Source and Preparation  
 - **Dataset Source:** AXIA AFRICA (provided for the assessment).  
